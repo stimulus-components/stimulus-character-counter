@@ -50,7 +50,7 @@ export default class extends CharacterCounter {
     super.connect()
     console.log("Do what you want here.")
 
-    this.count() // Will return the number of characters in the input/texterea.
+    this.count // Will return the number of characters in the input/texterea.
   }
 }
 ```

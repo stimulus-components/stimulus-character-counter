@@ -4,7 +4,7 @@
 [![](https://img.shields.io/npm/v/stimulus-character-counter.svg)](https://www.npmjs.com/package/stimulus-character-counter)
 [![](https://github.com/stimulus-components/stimulus-character-counter/workflows/Lint/badge.svg)](https://github.com/stimulus-components/stimulus-character-counter)
 [![](https://img.shields.io/github/license/stimulus-components/stimulus-character-counter.svg)](https://github.com/stimulus-components/stimulus-character-counter)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d62d950e-aae7-464d-8333-1078a16ec481/deploy-status)](https://stimulus-character-counter.netlify.com)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7ef669f5-d255-4a59-8461-5b2360d1674b/deploy-status)](https://stimulus-character-counter.netlify.com)
 
 ## Getting started
 

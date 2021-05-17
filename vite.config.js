@@ -4,10 +4,10 @@ module.exports = {
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'stimulus-timeago'
+      name: 'stimulus-character-counter'
     },
     rollupOptions: {
-      external: ['date-fns', 'stimulus'],
+      external: ['stimulus'],
       output: {
         globals: {
           stimulus: 'Stimulus'

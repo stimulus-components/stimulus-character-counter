@@ -1,10 +1,14 @@
+
 .github
 jest
 .babelrc
 jest.config.js
 index.html
-snowpack.config.json
 netlify.toml
 .node-version
 .eslintrc.js
 src
+specs
+tsconfig.json
+vite.config.js
+.prettierignore

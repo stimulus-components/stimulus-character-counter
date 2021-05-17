@@ -1,26 +1,29 @@
 import { Controller } from 'stimulus'
 
 export default class extends Controller {
+  counterTarget: HTMLElement
+  inputTarget: HTMLInputElement
+
   static targets = ['input', 'counter']
 
-  initialize () {
+  initialize (): void {
     this.update = this.update.bind(this)
   }
 
-  connect () {
+  connect (): void {
     this.update()
     this.inputTarget.addEventListener('input', this.update)
   }
 
-  disconnect () {
+  disconnect (): void {
     this.inputTarget.removeEventListener('input', this.update)
   }
 
-  update () {
-    this.counterTarget.innerHTML = this.count
+  update (): void {
+    this.counterTarget.innerHTML = this.count.toString()
   }
 
-  get count () {
+  get count (): Number {
     return this.inputTarget.value.length
   }
 }

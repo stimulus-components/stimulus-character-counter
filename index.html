@@ -139,6 +139,21 @@
           </p>
         </div>
       </section>
+
+      <section class="mt-16">
+        <div data-controller="character-counter" data-character-counter-countdown-value="true">
+          <textarea
+            data-character-counter-target="input"
+            maxlength="280"
+            class="shadow-sm appearance-none border w-full py-2 px-3 rounded-l-md text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="What's happening?"
+          ></textarea>
+
+          <p class="mt-2 text-md text-gray-800">
+            There are <strong data-character-counter-target="counter"></strong> characters characters remaining.
+          </p>
+        </div>
+      </section>
     </div>
 
     <!-- This example requires Tailwind CSS v2.0+ -->

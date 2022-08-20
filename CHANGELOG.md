@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Added
+
+- Adding countdown mode (https://github.com/stimulus-components/stimulus-character-counter/pull/4)
+
 ## [4.0.0] - 2021-11-13
 
 ### Chore

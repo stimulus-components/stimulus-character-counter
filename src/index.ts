@@ -3,8 +3,10 @@ import { Controller } from '@hotwired/stimulus'
 export default class extends Controller {
   counterTarget: HTMLElement
   inputTarget: HTMLInputElement
+  hasCountdownValue: boolean
 
   static targets = ['input', 'counter']
+  static values = { countdown: Boolean }
 
   initialize (): void {
     this.update = this.update.bind(this)
@@ -23,7 +25,23 @@ export default class extends Controller {
     this.counterTarget.innerHTML = this.count.toString()
   }
 
-  get count (): Number {
-    return this.inputTarget.value.length
+  get count (): number {
+    let value: number = this.inputTarget.value.length
+
+    if (this.hasCountdownValue) {
+      if (this.maxLength < 0) {
+        console.error(
+          `[stimulus-character-counter] You need to add a maxlength attribute on the input to use countdown mode. The current value is: ${this.maxLength}.`
+        )
+      }
+
+      value = Math.max(this.maxLength - value, 0)
+    }
+
+    return value
+  }
+
+  get maxLength (): number {
+    return this.inputTarget.maxLength
   }
 }

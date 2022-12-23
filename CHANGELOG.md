@@ -6,6 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.2.0] - 2022-12-23
+
+### Added
+
+-  Adding `name` in library export to use the package with CDN, Sprockets and `import-maps`.
+
+### Chore
+
+- Updating docs style.
+- Upgrading dependencies.
+- Upgrading Node to `18.x`.
+
+## [4.1.0] - 2022-08-20
+
 ## Added
 
 - Adding countdown mode (https://github.com/stimulus-components/stimulus-character-counter/pull/4)

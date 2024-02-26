@@ -1,4 +1,5 @@
 # Changelog
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -6,11 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [5.0.0] - 2024-02-25
+
+### Chore
+
+- Renaming the component from `stimulus-character-counter` to `@stimulus-components/character-counter`
+- Upgrading dependencies
+- Exporting Typescript Types
+- Updating demo UI
+- Add [Stimulus LSP](https://github.com/marcoroth/stimulus-lsp) compatibility
+
 ## [4.2.0] - 2022-12-23
 
 ### Added
 
--  Adding `name` in library export to use the package with CDN, Sprockets and `import-maps`.
+- Adding `name` in library export to use the package with CDN, Sprockets and `import-maps`.
 
 ### Chore
 
@@ -31,7 +42,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Breaking** Upgrading Stimulus to `3.x` and change namespace from `stimulus` to `@hotwired/stimulus`.
 - Upgrading dependencies
 - Upgrading Node to 14.18.0
-
 
 ## [3.0.1] - 2021-05-17
 
